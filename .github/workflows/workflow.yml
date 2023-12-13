@@ -24,6 +24,8 @@ jobs:
           - .:/var/www/html
 
     steps:
+    - uses: actions/checkout@v3
+
     - name: Install dependencies
       run: pip install requests
 
